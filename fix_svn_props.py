@@ -39,6 +39,8 @@ MIME.update( { x:"text/xml" for x in MIME_XML_EXTENSIONS } )
 
 IGNORED = [".svn", ".hg", ".git", "build/", "/build", "test/working"]
 
+VERSION = "20120103"
+
 def is_ignorable(name):
     for ignorable in IGNORED:
         if ignorable in name:
@@ -127,7 +129,7 @@ def walk_directories(paths, mime=True, eol=True, test=False):
 
 if (__name__ == "__main__"):
  
-    parser = argparse.ArgumentParser(prog="fix_svn_prop",
+    parser = argparse.ArgumentParser(prog="fix_svn_props",
                                      description='Fix the svn properties for a given directory (recursive)')
 
     parser.add_argument('--mime', action="store_true", default=False,
