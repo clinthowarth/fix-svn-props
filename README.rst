@@ -7,6 +7,9 @@ text. It's probably not what *you* need though. It might happen that
 you inherit a svn repository with bad associations and properties. If
 you do, I hope that this script helps you get back to sanity.
 
+*Note*: This was written with posix-systems in mind, I'm guessing it
+won't play nicely on Windows.
+
 Use
 ---
 
